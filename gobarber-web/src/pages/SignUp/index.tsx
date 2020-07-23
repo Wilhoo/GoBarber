@@ -18,7 +18,7 @@ import Button from '../../components/Button';
 
 import { Container, Content, AnimationContainer, Background } from './styles';
 
-interface SignUpForData {
+interface SignUpFormData {
   name: string;
   email: string;
   password: string;
@@ -31,7 +31,7 @@ const SignUp: React.FC = () => {
 
   // eslint-disable-next-line @typescript-eslint/ban-types
   const handleSubmit = useCallback(
-    async (data: SignUpForData) => {
+    async (data: SignUpFormData) => {
       try {
         formRef.current?.setErrors({});
 
